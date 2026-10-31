@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your ticket | Coding Conf 2026</title>
+    <link rel="icon" href="../assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/ticket.js" defer></script>
+  </head>
+  <body class="ticket-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header page-container ticket-header">
+      <a class="brand" href="index.html" aria-label="Coding Conf home">
+        <img src="../assets/images/logo-full.svg" alt="Coding Conf" />
+      </a>
+    </header>
+
+    <main id="main-content" class="page-container ticket-main">
+      <section class="confirmation" aria-labelledby="confirmation-title">
+        <h1 id="confirmation-title">
+          Congrats, <span id="ticket-name-heading" class="accent-text">Attendee</span>!<br />
+          Your ticket is ready.
+        </h1>
+        <p class="confirmation-copy">
+          Your ticket is ready for
+          <span id="ticket-email" class="accent-text">your email address</span>.
+          We will send updates before the event.
+        </p>
+      </section>
+
+      <section class="ticket-card" aria-label="Your Coding Conf ticket">
+        <div class="ticket-content">
+          <div class="ticket-brand-row">
+            <img class="ticket-mark" src="../assets/images/logo-mark.svg" alt="" />
+            <div>
+              <p class="ticket-brand-name">Coding Conf</p>
+              <p class="ticket-date">
+                <time datetime="2026-10-26">October 26, 2026</time>
+                <span aria-hidden="true"> / </span>
+                Papine, Kgn
+              </p>
+            </div>
+          </div>
+
+          <div class="ticket-attendee">
+            <img
+              class="ticket-avatar"
+              id="ticket-avatar"
+              src="../assets/images/image-avatar.jpg"
+              alt="Ticket attendee"
+            />
+            <div class="attendee-info">
+              <p class="attendee-name" id="ticket-attendee-name">Attendee</p>
+              <a
+                class="github-link"
+                id="ticket-github"
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="../assets/images/icon-github.svg" alt="" />
+                <span id="ticket-github-handle">@username</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticket-stub" aria-label="Ticket number">
+          <span class="ticket-number">#01609</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

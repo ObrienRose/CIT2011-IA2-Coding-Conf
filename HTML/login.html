@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register | Coding Conf 2026</title>
+    <link rel="icon" href="../assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/validation.js" defer></script>
+  </head>
+  <body class="form-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header page-container form-header">
+      <a class="brand" href="index.html" aria-label="Coding Conf home">
+        <img src="../assets/images/logo-full.svg" alt="Coding Conf" />
+      </a>
+    </header>
+
+    <main id="main-content" class="page-container form-main">
+      <section class="form-intro" aria-labelledby="form-title">
+        <h1 id="form-title">
+          Your Journey to Coding Conf<br class="desktop-break" />
+          2026 Starts Here!
+        </h1>
+        <p>Secure your spot at the next Coding Conf event in Papine, Kingston.</p>
+      </section>
+
+      <form id="registration-form" class="registration-form" novalidate>
+        <div class="field-group">
+          <label class="field-label" for="avatar">Upload Avatar</label>
+          <div class="upload-dropzone" id="upload-dropzone">
+            <input
+              class="file-input"
+              id="avatar"
+              name="avatar"
+              type="file"
+              accept="image/png,image/jpeg"
+              aria-describedby="avatar-help avatar-error"
+            />
+            <span class="upload-icon-wrap" aria-hidden="true">
+              <img src="../assets/images/icon-upload.svg" alt="" />
+            </span>
+            <span class="upload-title" id="upload-title">Drag and drop or click to upload</span>
+            <span class="upload-file-name" id="upload-file-name">JPG or PNG, max size: 500KB</span>
+            <img class="avatar-preview" id="avatar-preview" alt="Selected avatar preview" hidden />
+            <div class="upload-actions" id="avatar-actions" hidden>
+              <button class="upload-action" id="remove-avatar" type="button">Remove image</button>
+              <button class="upload-action" id="change-avatar" type="button">Change image</button>
+            </div>
+          </div>
+          <p class="field-help" id="avatar-help">
+            <img class="hint-icon" src="../assets/images/icon-info.svg" alt="" />
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </p>
+          <p class="field-error" id="avatar-error" data-error-for="avatar" aria-live="polite"></p>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="full-name">Full Name</label>
+          <input
+            class="text-input"
+            id="full-name"
+            name="fullName"
+            type="text"
+            autocomplete="name"
+            placeholder="e.g. Alex Morgan"
+            aria-describedby="full-name-error"
+          />
+          <p class="field-error" id="full-name-error" data-error-for="fullName" aria-live="polite"></p>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="email">Email Address</label>
+          <input
+            class="text-input"
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="example@email.com"
+            aria-describedby="email-error"
+          />
+          <p class="field-error" id="email-error" data-error-for="email" aria-live="polite"></p>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="github">GitHub Username</label>
+          <input
+            class="text-input"
+            id="github"
+            name="github"
+            type="text"
+            autocomplete="username"
+            placeholder="@yourusername"
+            aria-describedby="github-error"
+          />
+          <p class="field-error" id="github-error" data-error-for="github" aria-live="polite"></p>
+        </div>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <button class="button submit-button" type="submit">Generate My Ticket</button>
+      </form>
+    </main>
+  </body>
+</html>
